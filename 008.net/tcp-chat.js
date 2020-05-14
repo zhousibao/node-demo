@@ -1,5 +1,3 @@
-// net 模块用于创建基于流的 TCP 或 IPC 的服务器net.createServer与客户端net.createConnection
-
 // Telnet是TCP协议上层的协议。
 
 // 本例描述
