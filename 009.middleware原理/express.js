@@ -1,4 +1,9 @@
 // 实现一个类似express的node框架
+
+// 区别
+// 1 分成三类all,get,post 存放中间件 没有实现完整版的洋葱图
+// 2 express 对于get、post的路由会精确匹配, 对于使用use的路由做到包含即匹配。本例完全是包含即匹配。
+
 const http = require('http')
 const slice = Array.prototype.slice
 
