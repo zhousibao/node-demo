@@ -16,5 +16,6 @@ var server = http.createServer((request,response) =>{
     response.end('<h1>Hello Node!</h1>')
   },1000)
 })
-server.listen(8088)
-// console.log('http://localhost:8088')
+server.listen(8088, () => {
+  console.log('服务已启动，请访问http://localhost:8088')
+})
