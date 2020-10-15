@@ -1,9 +1,12 @@
 const fs = require('fs')
 const { stdin , stdout } = process
 
+
+
 fs.readdir(process.cwd(),(err, files) => {
   // process.cwd() Node进程的当前工作目录。
   // console.log(files)
+  // __dirname 被执行 js 文件的绝对路径 // 不包含文件名
   if(!files.length){
     return console.log('no files')
   }
@@ -35,7 +38,7 @@ fs.readdir(process.cwd(),(err, files) => {
 
   function read(){
     stdout.write('\nenter you choice: ')
-    stdin.resume()
+    stdin.resume() // 读取输入流
     stdin.setEncoding('utf8')
     stdin.on('data',option)
   }

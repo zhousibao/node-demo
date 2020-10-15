@@ -1,19 +1,11 @@
 var fs = require('fs')
 
 // 异步读
-fs.readFile('./data/data.json','utf-8', function(err,data){
-  if(err){
-    console.log('异步err',err)
-  } else{
-    console.log('异步data',data)
-  }
-})
-
 fs.readFile('./data/data.json','utf-8', (err,data) => {
   if(err){
-    console.log('异步err',err)
+    console.log('异步err2',err)
   } else{
-    console.log('异步data',data)
+    console.log('异步data2',data)
   }
 })
 
